@@ -1,6 +1,6 @@
 --- a/arch/arm64/boot/dts/rockchip/Makefile
 +++ b/arch/arm64/boot/dts/rockchip/Makefile
-@@ -44,6 +44,8 @@ dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3399-gr
+@@ -44,6 +44,7 @@ dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3399-gr
  dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3399-gru-scarlet-dumo.dtb
  dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3399-gru-scarlet-inx.dtb
  dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3399-gru-scarlet-kd.dtb
@@ -16,7 +16,7 @@
  dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3399-nanopi-r4s-enterprise.dtb
  dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3399-orangepi.dtb
  dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3399-pinebook-pro.dtb
-@@ -108,15 +110,20 @@ dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3566-so
+@@ -108,15 +110,21 @@ dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3566-so
  dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3566-box-demo.dtb
  dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3566-lckfb-tspi.dtb
  dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3566-lubancat-1.dtb
