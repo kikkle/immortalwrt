@@ -264,19 +264,19 @@
 	cooling-maps {
 		map0 {
 			trip = <&cpu_idle>;
-			cooling-device = <&fan0 0 0>;
+			cooling-device = <&fan0 1 1>;
 		};
 		map1 {
 			trip = <&cpu_low>;
-			cooling-device = <&fan0 1 1>;
+			cooling-device = <&fan0 1 2>;
 		};
 		map2 {
 			trip = <&cpu_warm>;
-			cooling-device = <&fan0 1 2>;
+			cooling-device = <&fan0 2 3>;
 		};
 		map3 {
 			trip = <&cpu_hot>;
-			cooling-device = <&fan0 2 3>;
+			cooling-device = <&fan0 3 4>;
 		};
 		map4 {
 			trip = <&cpu_hall>;
