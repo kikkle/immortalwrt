@@ -30,7 +30,7 @@
 		pinctrl-names = "default";
 		#cooling-cells = <2>;
 		pwms = <&pwm7 0 40000 0>;
-		cooling-levels = <0 25 50 100 180 255>;
+		cooling-levels = <0 40 70 100 150 200 255>;
 	};
 
 	spi_gpio: spi-gpio {
@@ -235,7 +235,7 @@
 &cpu_thermal {
 	trips {
 		cpu_idle: cpu_idle {
-			temperature = <20000>;
+			temperature = <30000>;
 			hysteresis = <5000>;
 			type = "passive";
 		};
@@ -268,19 +268,19 @@
 		};
 		map1 {
 			trip = <&cpu_low>;
-			cooling-device = <&fan0 1 2>;
+			cooling-device = <&fan0 1 3>;
 		};
 		map2 {
 			trip = <&cpu_warm>;
-			cooling-device = <&fan0 2 3>;
+			cooling-device = <&fan0 3 4>;
 		};
 		map3 {
 			trip = <&cpu_hot>;
-			cooling-device = <&fan0 3 4>;
+			cooling-device = <&fan0 4 5>;
 		};
 		map4 {
 			trip = <&cpu_hall>;
-			cooling-device = <&fan0 5 THERMAL_NO_LIMIT>;
+			cooling-device = <&fan0 6 THERMAL_NO_LIMIT>;
 		};
 	};
 };
