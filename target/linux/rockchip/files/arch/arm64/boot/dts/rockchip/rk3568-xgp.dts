@@ -276,7 +276,7 @@
 		};
 		map3 {
 			trip = <&cpu_hot>;
-			cooling-device = <&fan0 4 5>;
+			cooling-device = <&fan0 3 5>;
 		};
 		map4 {
 			trip = <&cpu_hall>;
