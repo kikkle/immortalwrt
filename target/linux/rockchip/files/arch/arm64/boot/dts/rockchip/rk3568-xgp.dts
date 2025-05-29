@@ -264,7 +264,7 @@
 	cooling-maps {
 		map0 {
 			trip = <&cpu_idle>;
-			cooling-device = <&fan0 1 1>;
+			cooling-device = <&fan0 0 1>;
 		};
 		map1 {
 			trip = <&cpu_low>;
