@@ -30,7 +30,7 @@
 		pinctrl-names = "default";
 		#cooling-cells = <2>;
 		pwms = <&pwm7 0 40000 0>;
-		cooling-levels = <0 50 75 100 150 200 255>;
+		cooling-levels = <0 40 80 140 200 255>;
 	};
 
 	spi_gpio: spi-gpio {
