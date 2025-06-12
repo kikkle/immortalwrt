@@ -30,7 +30,7 @@
 		pinctrl-names = "default";
 		#cooling-cells = <2>;
 		pwms = <&pwm7 0 40000 0>;
-		cooling-levels = <0 50 100 160 255>;
+		cooling-levels = <0 50 100 150 200 255>;
 	};
 
 	spi_gpio: spi-gpio {
@@ -245,17 +245,17 @@
 			type = "active";
 		};
 		cpu_warm: cpu_warm {
-			temperature = <45000>;
-			hysteresis = <5000>;
-			type = "active";
-		};
-		cpu_hot: cpu_hot {
 			temperature = <50000>;
 			hysteresis = <5000>;
 			type = "active";
 		};
-		cpu_hall: cpu_hall {
+		cpu_hot: cpu_hot {
 			temperature = <60000>;
+			hysteresis = <5000>;
+			type = "active";
+		};
+		cpu_hall: cpu_hall {
+			temperature = <70000>;
 			hysteresis = <5000>;
 			type = "active";
 		};
@@ -268,19 +268,19 @@
 		};
 		map1 {
 			trip = <&cpu_low>;
-			cooling-device = <&fan0 1 2>;
+			cooling-device = <&fan0 1 3>;
 		};
 		map2 {
 			trip = <&cpu_warm>;
-			cooling-device = <&fan0 2 3>;
+			cooling-device = <&fan0 3 4>;
 		};
 		map3 {
 			trip = <&cpu_hot>;
-			cooling-device = <&fan0 3 4>;
+			cooling-device = <&fan0 4 5>;
 		};
 		map4 {
 			trip = <&cpu_hall>;
-			cooling-device = <&fan0 4 THERMAL_NO_LIMIT>;
+			cooling-device = <&fan0 5 THERMAL_NO_LIMIT>;
 		};
 	};
 };
